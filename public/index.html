@@ -48,15 +48,37 @@
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
+    <body>
+      <div class="container">
+        <div class="weather-app-app">
+          <div class="weather-app">
+            <h1 id="city-name">London</h1>
+            <div class="row">
+              <div class="col-7">
+                <ul>
+                  <li className="date">Friday 05:00</li>
+                  <li className="description">Cloudy</li>
+                </ul>
 
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
+                <strong>
+                  <span className="degree"></span>
+                </strong>
+              </div>
 
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+              <div class="col-5">
+                <ul>
+                  <li className="humidity">Humidity:</li>
+                  <li className="wind">Wind:</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <small>
+            <a href="" target="_blank">Open-source code</a>
+            by Yetunde Ajayi
+          </small>
+        </div>
+      </div>
+    </body>
   </body>
 </html>

@@ -13,6 +13,13 @@ export default function App() {
     setTemp(
       <ul>
         <li>{Math.round(response.data.main.temp)}°C</li>
+        <li>
+          {" "}
+          <img
+            src={`https://openweathermap.org/img/wn/{response.data.weather[0].icon}@2x.png`}
+            alt={response.data.weather[0].description}
+          />
+        </li>
       </ul>
     );
   }
@@ -26,9 +33,7 @@ export default function App() {
     <div className="Weather">
       <form onSubmit={handleWeather}>
         <input type="search" placeholder="Type city" onChange={updateCity} />
-        <button type="button" className="btn btn-primary">
-          Search
-        </button>
+        <input type="submit" value="search" />
       </form>
       <div>{temp}</div>
     </div>

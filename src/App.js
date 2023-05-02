@@ -46,7 +46,7 @@ export default function App() {
         <input type="search" placeholder="Type city" onChange={updateCity} />
         <input type="submit" value="search" />
       </form>
-
+      <h1>London</h1>
       <h2>{temp}</h2>
     </div>
   );

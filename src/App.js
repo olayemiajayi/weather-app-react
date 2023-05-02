@@ -44,7 +44,7 @@ export default function App() {
     <div className="Weather">
       <form onSubmit={handleWeather}>
         <input type="search" placeholder="Type city" onChange={updateCity} />
-        <input type="submit" value="search" class="btn btn-primary w-48 m-2" />
+        <input type="submit" value="search" />
       </form>
 
       <h2>{temp}</h2>

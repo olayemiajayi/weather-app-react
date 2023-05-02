@@ -10,13 +10,12 @@ export default function App() {
 
   function showWeather(response) {
     console.log(response.data);
+    let Temperature = `${city} ${Math.round(response.data.main.temp)}°C`;
     setTemp(
       <ul>
         <div className="city">
           <li>
-            <strong>
-              {city} {Math.round(response.data.main.temp)}°C
-            </strong>
+            <strong>{Temperature}</strong>
           </li>
         </div>
         <li>
@@ -47,10 +46,8 @@ export default function App() {
         <input type="search" placeholder="Type city" onChange={updateCity} />
         <input type="submit" value="search" class="btn btn-primary w-48 m-2" />
       </form>
-      <h2>London</h2>
-      <h2>Friday 05:00</h2>
 
-      <div>{temp}</div>
+      <h2>{temp}</h2>
     </div>
   );
 }
